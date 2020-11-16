@@ -1,0 +1,46 @@
+.game {
+    position: relative;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--text-color);
+
+    &__image {
+        margin: 15px 5px;
+        border-radius: 15px;
+    }
+
+    &__jackpot {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(black, var(--opacity));
+    }
+
+    &__play {
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        top: 40%;
+        left: 40%;
+        font-size: 0;
+        transition: var(--transition);
+    }
+
+    &__name {
+        display: none;
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        font-size: var(--text-font-size);
+    }
+
+    &:hover {
+        opacity: var(--opacity);
+        .game__play {
+            font-size: var(--icon-font-size);
+        }
+        .game__name {
+            display: block;
+        }
+    }
+}

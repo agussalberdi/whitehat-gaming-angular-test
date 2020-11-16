@@ -1,0 +1,13 @@
+<ng-container *ngIf="(games$ | async) as games">
+    <ng-container *ngIf="games.length > 0; else noGames">
+        <div fxLayout="row wrap" fxLayoutAlign="center center">
+            <app-game *ngFor="let game of games" [game]="game"></app-game>
+        </div>
+    </ng-container>
+    <ng-template #noGames>
+        <div class="no-games">
+            <p>No games available.</p>
+            <span class="material-icons">sentiment_dissatisfied</span>
+        </div>
+    </ng-template>
+</ng-container>

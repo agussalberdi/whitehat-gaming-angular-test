@@ -1,0 +1,14 @@
+.no-games {
+    padding: 50px;
+    text-align: center;
+
+    p {
+        font-size: var(--text-font-size);
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    span {
+        font-size: var(--icon-font-size);
+    }
+}

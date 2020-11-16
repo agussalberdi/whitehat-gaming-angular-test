@@ -1,0 +1,3 @@
+<nav fxLayoutAlign="space-around center">
+    <a *ngFor="let link of links" [routerLink]="link.path" routerLinkActive="active">{{ link.name }}</a>
+</nav>
