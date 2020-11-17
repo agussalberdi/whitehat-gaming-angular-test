@@ -1,7 +1,7 @@
 nav {
     width: 100%;
     background-color: var(--primary-color);
-    line-height: 3;
+    line-height: 2;
     text-align: center;
 
     a {
@@ -9,7 +9,7 @@ nav {
         font-size: var(--text-font-size);
         color: var(--text-color);
         width: 150px;
-        padding: 10px;
+        padding: 5px;
     
         &.active {
             background-color: var(--secondary-color);

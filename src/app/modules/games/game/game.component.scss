@@ -40,7 +40,8 @@
         top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: medium;
+        font-size: 17px;
+        font-weight: bold;
     }
 
     &__ribbon {
@@ -63,7 +64,6 @@
     }
 
     &:hover {
-        opacity: var(--opacity);
         transform: scale(1.05);
 
         .game__play {

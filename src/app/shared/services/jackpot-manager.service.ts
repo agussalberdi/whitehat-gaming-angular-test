@@ -34,7 +34,6 @@ export class JackpotManagerService {
             mergeMap(() => this.fetchApiService.getJackpotFeed()),
             map((jackpots) => this.detectGamesWithJackpots(this.gamesWithJackpotsSource.getValue(), jackpots)),
             tap(value => this.gamesWithJackpotsSource.next(value)),
-            tap(value => console.log(value))
         );
     }
 }

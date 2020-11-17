@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  api_url: 'http://stage.whgstage.com/front-end-test'
+  api_url: 'https://stage.whgstage.com/front-end-test'
 };
