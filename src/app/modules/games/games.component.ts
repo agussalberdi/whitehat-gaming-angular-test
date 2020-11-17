@@ -19,6 +19,7 @@ export class GamesComponent implements OnInit {
   ngOnInit(): void {
     this.currentCategories = this.route.snapshot.data.categories;
     this.fetchGames();
+    this.jackpotManagerService.updateGamesWithJackpots();
   }
 
   private fetchGames(): void {

@@ -1,6 +1,10 @@
 <div class="game">
     <img [src]="game.image" [alt]="game.name" class="game__image">
-    <div *ngIf="game?.amount" class="game__jackpot">{{ game.amount }}</div>
+    <div *ngIf="game?.amount" class="game__jackpot">{{ game.amount | currency: 'GBP' }}</div>
     <span class="game__name">{{ game.name }}</span>
     <span class="material-icons game__play">play_arrow</span>
+    <div *ngIf="newOrTopRibbon(game)" class="game__ribbon">
+        <img [src]="ribbonUrl"/>
+        <span>{{ newOrTop(game) }}</span>
+    </div>
 </div>

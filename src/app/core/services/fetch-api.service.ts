@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
-import { tap } from 'rxjs/operators';
-import { Game, Jackpot } from 'src/app/shared/interfaces/index';
+import { environment } from '@environments/environment';
+import { Game, Jackpot } from '@shared/interfaces/index';
 
 @Injectable({
   providedIn: 'root'

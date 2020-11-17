@@ -3,9 +3,9 @@
     cursor: pointer;
     transition: var(--transition);
     color: var(--text-color);
+    margin: 15px 5px;
 
     &__image {
-        margin: 15px 5px;
         border-radius: 15px;
     }
 
@@ -13,7 +13,12 @@
         position: absolute;
         top: 0;
         left: 0;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
         background: rgba(black, var(--opacity));
+        line-height: 2;
+        font-weight: bold;
     }
 
     &__play {
@@ -32,6 +37,24 @@
         top: 20%;
         left: 40%;
         font-size: var(--text-font-size);
+    }
+
+    &__ribbon {
+        position: absolute;
+        right: -2px;
+        top: 8px;
+        z-index: 2;
+        
+        img {
+            width: 110px;
+        }
+
+        span {
+            position: absolute;
+            top: 25px;
+            transform: rotate(45deg);
+            right: 15px;
+        }
     }
 
     &:hover {
