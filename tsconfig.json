@@ -20,8 +20,7 @@
       "@src/*": ["src/*"],
       "@assets/*": ["src/assets/*"],
       "@environments/*": ["src/environments/*"],
-      "@shared/*": ["src/app/shared/*"],
-      "@core/*": ["src/app/core/*"]
+      "@shared/*": ["src/app/shared/*"]
     }
   }
 }
