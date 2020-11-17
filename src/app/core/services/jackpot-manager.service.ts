@@ -35,6 +35,6 @@ export class JackpotManagerService {
             map((jackpots) => this.detectGamesWithJackpots(this.gamesWithJackpotsSource.getValue(), jackpots)),
             tap(value => this.gamesWithJackpotsSource.next(value)),
             tap(value => console.log(value))
-        ).subscribe();
+        );
     }
 }
