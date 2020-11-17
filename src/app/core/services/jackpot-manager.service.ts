@@ -29,7 +29,7 @@ export class JackpotManagerService {
         );
     }
 
-    updateGamesWithJackpots() {
+    updateGamesWithJackpots(): Observable<JackpotGame[]> {
         return interval(2000).pipe(
             mergeMap(() => this.fetchApiService.getJackpotFeed()),
             map((jackpots) => this.detectGamesWithJackpots(this.gamesWithJackpotsSource.getValue(), jackpots)),

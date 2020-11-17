@@ -5,6 +5,6 @@
     <span class="material-icons game__play">play_arrow</span>
     <div *ngIf="newOrTopRibbon(game)" class="game__ribbon">
         <img [src]="ribbonUrl"/>
-        <span>{{ newOrTop(game) }}</span>
+        <span>{{ displayNewOrTop(game) }}</span>
     </div>
 </div>

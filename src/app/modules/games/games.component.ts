@@ -18,13 +18,14 @@ export class GamesComponent implements OnInit {
 
   ngOnInit(): void {
     this.currentCategories = this.route.snapshot.data.categories;
-    this.fetchGames();
+    this.jackpotManagerService.getGamesWithJackpots().subscribe();
     this.jackpotManagerService.updateGamesWithJackpots().subscribe();
+    this.fetchGames();
   }
 
   private fetchGames(): void {
-    this.games$ = this.jackpotManagerService.getGamesWithJackpots().pipe(
-      map((allGames: JackpotGame[]) => allGames.filter(game => game.categories.some(category => this.currentCategories.includes(category))))
+    this.games$ = this.jackpotManagerService.gamesWithJackpots$.pipe(
+      map((allGames: JackpotGame[]) => allGames.filter(game => game.categories.find(category => this.currentCategories.includes(category))))
     );
   }
 

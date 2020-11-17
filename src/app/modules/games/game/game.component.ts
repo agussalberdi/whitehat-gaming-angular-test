@@ -24,7 +24,7 @@ export class GameComponent implements OnInit {
     return false;
   }
 
-  newOrTop(game: JackpotGame) {
+  displayNewOrTop(game: JackpotGame) {
     return game.categories.includes('new') ? 'NEW' : 'TOP';
   }
 
