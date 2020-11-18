@@ -1,7 +1,7 @@
 <ng-container *ngIf="(games$ | async) as games">
     <ng-container *ngIf="games.length > 0; else noGames">
         <div class="container" fxLayout="row wrap" fxLayoutAlign="center center">
-            <app-game *ngFor="let game of games" [game]="game" [categories]="currentCategories"></app-game>
+            <app-game *ngFor="let game of games" [game]="game" [categories]="currentCategories" fxFlex="20" fxFlex.lt-lg="33" fxFlex.lt-md="50" fxFlex.xs="100"></app-game>
         </div>
     </ng-container>
     <ng-template #noGames>

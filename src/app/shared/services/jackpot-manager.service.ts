@@ -30,7 +30,7 @@ export class JackpotManagerService {
     }
 
     updateGamesWithJackpots(): Observable<JackpotGame[]> {
-        return interval(2000).pipe(
+        return interval(4000).pipe(
             mergeMap(() => this.fetchApiService.getJackpotFeed()),
             map((jackpots) => this.detectGamesWithJackpots(this.gamesWithJackpotsSource.getValue(), jackpots)),
             tap(value => this.gamesWithJackpotsSource.next(value)),
