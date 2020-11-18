@@ -32,6 +32,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Technologies used:
 - Angular 10
+- Angular Material
 - Angular FxLayout
 - Angular CLI
 - TypeScript
