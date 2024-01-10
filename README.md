@@ -1,4 +1,4 @@
-# WhitehatFrontendTest
+# White Hat Gaming Frontend Test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
@@ -42,3 +42,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Hosted Application
 
 - URL: https://whitehat-gaming-test.netlify.app/
+
+## How it looks?
+
+<img width="1470" alt="Screenshot 2024-01-10 at 15 36 07" src="https://github.com/agussalberdi/whitehat-gaming-angular-test/assets/43733257/51758858-69ee-4532-b41c-7b8a47a62908">
+
+
+
